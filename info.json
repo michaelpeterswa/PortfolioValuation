@@ -1,0 +1,13 @@
+{
+    "project": [
+        {
+            "author": "Michael Peters",
+            "projectName": "PortfolioValuation",
+            "version": "1.0.0",
+            "description": "this is a program that returns the current tfolio of stocks",
+            "longDescription": "this program is a demonstration of the qmsltypes of programs that it can be used for",
+            "githubLink": "https://github.com/michaelpeterswa/PortfolioValuation",
+            "date": "06.27.2020"
+        }
+    ]
+}
