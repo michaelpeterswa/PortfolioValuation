@@ -1,6 +1,6 @@
 # PortfolioValuation
-this is a program that returns the current tfolio of stocks
-> this program is a demonstration of the qmsltypes of programs that it can be used for
+this is a program that returns the current portfolio of stocks
+> this program is a demonstration of the qmsl language and types of programs that it can be used for
 ## Installation
 ```
 git clone https://github.com/michaelpeterswa/PortfolioValuation.git
