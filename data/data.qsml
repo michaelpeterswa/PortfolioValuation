@@ -1,0 +1,11 @@
+< Example QSML File >
+
+* main *
+
+    $ AAPL : 2
+    $ GOOG : 2
+    $ AMZN : 2
+    $ TSLA : 2
+    $ MSFT : 2
+    $ AMD : 2
+    $ NVDA : 2
