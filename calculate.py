@@ -14,6 +14,10 @@ data = qsml.load(qsml_file)
 table = []
 headers = ["SYM", "SHARES", "PRICE", "TOTAL"]
 
+# "ensureTwoDecimals" (FLOAT ONLY)
+def e2D(val):
+    return "${:.2f}".format(val)
+
 
 def calculatePortfolioValuation(api_data, qsml_data):
     total = 0
@@ -21,13 +25,13 @@ def calculatePortfolioValuation(api_data, qsml_data):
         for quote in api_data.values():
             if stock == quote["quote"]["symbol"]:
                 p = quote["quote"]["latestPrice"]
-                tmp = [stock, amt, p, p * amt]
+                tmp = [stock, amt, e2D(p), e2D(p * amt)]
                 table.append(tmp)
                 total += float(amt) * p
 
     print('Valuation for group "%s"' % "main")
     print(tabulate(table, headers, tablefmt="pretty"))
-    print("Total Portfolio value: $%.2f" % total)
+    print("Total Portfolio value: ${:.2f}".format(total))
 
 
 lst = ""  # initialize url list of stocks
